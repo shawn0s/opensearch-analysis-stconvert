@@ -1,4 +1,4 @@
-STConvert Analysis for Elasticsearch
+STConvert Analysis for Opensearch
 ==================================
 
 STConvert is analyzer that convert Chinese characters between Traditional and Simplified.

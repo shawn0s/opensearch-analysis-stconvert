@@ -2,11 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <name>elasticsearch-analysis-stconvert</name>
+    <name>opensearch-analysis-stconvert</name>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.elasticsearch</groupId>
-    <artifactId>elasticsearch-analysis-stconvert</artifactId>
-    <version>${elasticsearch.version}</version>
+    <groupId>org.opensearch</groupId>
+    <artifactId>opensearch-analysis-stconvert</artifactId>
+    <version>${opensearch.version}</version>
     <packaging>jar</packaging>
     <description>STConvert is a analysis plugin that convert Chinese characters between traditional and simplified.</description>
     <inceptionYear>2012</inceptionYear>
@@ -29,12 +29,12 @@
     </developers>
 
     <properties>
-        <elasticsearch.version>8.4.1</elasticsearch.version>
+        <opensearch.version>2.9.0</opensearch.version>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <elasticsearch.assembly.descriptor>${project.basedir}/src/main/assemblies/plugin.xml</elasticsearch.assembly.descriptor>
-        <elasticsearch.plugin.name>analysis-stconvert</elasticsearch.plugin.name>
-        <elasticsearch.plugin.classname>org.elasticsearch.plugin.analysis.stconvert.AnalysisSTConvertPlugin</elasticsearch.plugin.classname>
-        <elasticsearch.plugin.jvm>true</elasticsearch.plugin.jvm>
+        <opensearch.assembly.descriptor>${project.basedir}/src/main/assemblies/plugin.xml</opensearch.assembly.descriptor>
+        <opensearch.plugin.name>opensearch-analysis-stconvert</opensearch.plugin.name>
+        <opensearch.plugin.classname>org.opensearch.plugin.analysis.stconvert.AnalysisSTConvertPlugin</opensearch.plugin.classname>
+        <opensearch.plugin.jvm>true</opensearch.plugin.jvm>
         <tests.rest.load_packaged>false</tests.rest.load_packaged>
         <skip.unit.tests>true</skip.unit.tests>
         <gpg.keyname>4E899B30</gpg.keyname>
@@ -75,9 +75,9 @@
     <dependencies>
 
         <dependency>
-            <groupId>org.elasticsearch</groupId>
-            <artifactId>elasticsearch</artifactId>
-            <version>${elasticsearch.version}</version>
+            <groupId>org.opensearch</groupId>
+            <artifactId>opensearch</artifactId>
+            <version>${opensearch.version}</version>
             <scope>compile</scope>
         </dependency>
 

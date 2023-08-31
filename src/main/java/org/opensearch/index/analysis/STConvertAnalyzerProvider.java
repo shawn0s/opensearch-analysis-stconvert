@@ -1,4 +1,4 @@
-package org.elasticsearch.index.analysis;
+package org.opensearch.index.analysis;
 /**
  * Licensed to the Apache Software Foundation (ASF) under one or more
  * contributor license agreements.  See the NOTICE file distributed with
@@ -16,16 +16,16 @@ package org.elasticsearch.index.analysis;
  * limitations under the License.
  */
 
-import org.elasticsearch.common.settings.Settings;
-import org.elasticsearch.env.Environment;
-import org.elasticsearch.index.IndexSettings;
+import org.opensearch.common.settings.Settings;
+import org.opensearch.env.Environment;
+import org.opensearch.index.IndexSettings;
 
 public class STConvertAnalyzerProvider extends AbstractIndexAnalyzerProvider<STConvertAnalyzer> {
 
     private final STConvertAnalyzer analyzer;
 
     public STConvertAnalyzerProvider(IndexSettings indexSettings, Environment env, String name, Settings settings) {
-        super(name, settings);
+        super(indexSettings, name, settings);
         Boolean keepBoth = false;
         String type = settings.get("convert_type", "s2t");
         String delimiter = settings.get("delimiter", ",");
